@@ -1,7 +1,7 @@
 # Molecule-Drawer
 Code to (and related to) draw molecules/save the output to a file!
 
-# Main.py
+# Molecule Drawer.py
 This code takes a str input (Such as 'Methane','Methene','Methanol' or 'Methylmethanoate') and prints out the molecule to the screen.
 
 # Intended changes
