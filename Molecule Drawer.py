@@ -26,7 +26,7 @@ if [x in prefixes for x in a.replace("yl",",").replace("anoate","").split(",")] 
 if info[0] == "alkane":runtime = ["h"]+[["h","c","h"] for x in range(info[1])]+["h"]
 elif info[0] == "alkene":runtime = ["hch","Nch"]+[["h","c","h"] for x in range(info[1]-2)]+["h"]
 elif info[0] == "alcohol":runtime = ["h"]+[["h","c","h"] for x in range(info[1])]+["o","h"]
-elif info[0] == "ester":runtime = ["h"]+[["h","c","h"] for x in range(info[1][0])]+["o",["N","c","o"]]+[["h","c","h"] for x in range(info[1][1] - 1)]+["h"]
+elif info[0] == "ester":runtime = ["h"]+[["h","c","h"] for x in range(info[1][1]-1)]+[["N","c","o"],"o"]+[["h","c","h"] for x in range(info[1][0])]+["h"]
 
 #Caculating coordinates of every atom based upon the structure
 coords=[]
@@ -57,3 +57,4 @@ for x in range(len(runtime)):
 #exceptions in other molecule types). As you can see, this code is commented - if lightly - to help you understand, if not the finer points, the general structure of the code. Carobxylic acids are on their way.
 
 ## -J
+
